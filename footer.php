@@ -11,13 +11,11 @@
     <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mvcenter" id="contact">
             <h4 class="head" id="our_contact">Contact Us</h4>
-            <a href="contactform" >Contact</a>
+            <a href="contact" >Contact</a>
             <p class="text-block footer-content footer-content-contact">
                 <address>
-                TEL:+9910154875<br>
-                info@kcador.com<br>
-                P.O BOX 72-10200,<br />
-                Eldoret.
+                <span class="fa fa-phone"></span> TEL:+9910154875<br>
+                <span class="fa fa-envelope-o"></span> info@kcador.com<br>
                 </address>
 
             </p>
@@ -25,7 +23,8 @@
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mvcenter">
             <h4 class="head">Location</h4>
                 <address>
-                    Eldoret, iten road <br>
+                    <h5 class="head">Head offices</h5>
+                   <span class="fa fa-map-marker"></span> Eldoret, iten road <br>
                     P.O BOX -30100, Eldoret<br><br>
                     Nairobi, mlolongo road <br>
                     P.O BOX   -00100 Nairobi
@@ -34,18 +33,17 @@
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mvcenter" id ="about">
             <h4 id="info_company" class="head">About Us</h4>
             <ul class="list-unstyled footer-content footer-content-about">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Who we are</a></li>
-                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="about">Who we are</a></li>
+                <li><a href="terms">Terms and conditions</a></li>
+                <li><a href="reviews">Reviews</a></li>
             </ul>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mvcenter" id="quick">
-            <h4 class="head" id="links">Quick Links</h4>
+            <h4 class="head" id="links">Working Hours</h4>
             <ul class="list-unstyled footer-content footer-content-links" >
-                <li class="text-block"><a href="index">Home</a></li>
-                <li class="text-block"><a href="login" data-toggle="modal" data-target="#myModal">sign in</a></li>
-                <li class="text-block"><a href="enroll" >Sign up</a></li>
-                <li class="text-block"><a href=""><i class="fa fa-sitemap"></i> site map</a></li>
+                <li class="text-block">Weekdays(Mon - Fri) 8.00 AM - 5.00 PM</li>
+                <li class="text-block">Weekends(Sat) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.00 AM - 12.00 PM</li>
             </ul>
         </div>
     </div>

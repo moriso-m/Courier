@@ -19,8 +19,8 @@ if (isset($_REQUEST['messageSubmit'])){
                 $message = $message. '<br><br>From  '.$_REQUEST['name'];
             }
 
-            //send email to  the customer care desk of kcador.com
-            $to = 'info@than.com';
+            //send email to  the customer care desk of ethan.com
+            $to = 'info@ethan.com';
             $subject = 'Query from customer';
             $from = $email;
             $sendMail = mail($to, $subject, $message, 'From:'.$email);
@@ -51,7 +51,7 @@ if (isset($_REQUEST['messageSubmit'])){
 <?php
 include "header.php";
 ?>
-<div style="background: url('images/background/gravel.png') fixed;" id="main-content">
+<div style="" id="main-content">
     <?php
     if (isset($error)) {
 

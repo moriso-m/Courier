@@ -51,7 +51,12 @@
 				</li>
 				<li>
 					<a href="#" data-target="#order" data-toggle="modal">
-						Ship courier
+						Request for quotition
+					</a>
+				</li>
+                <li>
+					<a href="login">
+						Staff login
 					</a>
 				</li>
 			</ul>
@@ -59,7 +64,21 @@
 	</nav>
 </div>
 
-<!--        enroll modal-->
+<div id="tracking-builder"></div>
+<div id="track-shipment">
+    <span id="track-close" class="close">&times</span>
+    <div id="track-shipment-content">
+        <h3>Track your shipment</h3>
+        <p>
+        </p>
+        <form id="popup-form" action="shipment-details.php" class="form-inline">
+            <input type="text" name="waybill" placeholder="Waybill number/track ID" class="form-control"/>
+            <button type="button" name="subscribe" class="btn btn-success">Track shipment</button>
+        </form>
+    </div>
+</div>
+
+<!--        courier order-->
 <div class="modal fade" id="order" role="dialog" >
     <div class="modal-dialog">
         <!-- modal content-->
@@ -70,7 +89,7 @@
             <div class="modal-header text-center">
                 <a href="#" data-dismiss="modal" class="close">&times;</a>
                 <h3>
-                    Shipment details
+                    Quotititon request details
                 </h3>
             </div>
             <div class="modal-body" >
@@ -97,9 +116,18 @@
                     </div>
                     <div class="form-group col-lg-8 col-lg-offset-2">
                         <input type="text" name="location" required class="form-control" placeholder="county / Town">
-                    </div>
+					</div>
+					<div class="form-group col-lg-8 col-lg-offset-2">
+						<input type="text" name="subject" id="subject" class="form-control" placeholder="subject">
+					</div>
+					<div class="form-group col-lg-8 col-lg-offset-2">
+						<textarea type="text" name="description" id="description" class="form-control">
+						</textarea>
+						<span class="help-block">Short description of what you want to ship or want to get delivered</span>
+
+					</div>
                     <button type="submit" id="courier-order"
-                            class="form-group btn btn-success col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-3 col-md-3 col-sm-3 col-xs-3">
+                            class="form-group btn btn-success col-lg-5 col-md-5 col-sm-6 col-xs-8 col-lg-offset-3 col-md-3 col-sm-3 col-xs-offset-2">
                         Order courier
                     </button>
                 </form>

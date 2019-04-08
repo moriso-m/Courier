@@ -4,19 +4,19 @@
 $(window).scroll(function() {
    var pos = $(window).scrollTop();
    console.log(pos);
-   if (pos>50) {
-       $('nav').addClass('navbar-fixed-top container fade in');
+   if (pos>38) {
+       $('nav').addClass('navbar-fixed-top fade in');
        $('nav').css({
            
        })
    }
    else if(pos < 50){
-       $('nav').removeClass('navbar-fixed-top container');
+       $('nav').removeClass('navbar-fixed-top');
    }
 });
 
 /* #################### save courier order ################*/
-$('#courier-order').click(function (e) {
+$('#courier-order,#courier-order-index').click(function (e) {
     e.preventDefault();
     $.ajax({
         type: 'POST',
@@ -64,3 +64,10 @@ $(document).ready(function() {
 
 });
 */
+
+$(document).ready(function() {
+    $("#track-close").click(() => {
+        $("#tracking-builder, #track-shipment").hide();
+        localStorage.setItem("list-builder", (new Date()).getTime());
+    });
+});

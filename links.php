@@ -11,6 +11,10 @@
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta author="moris" content="chayimWare.co.ke">
+<meta name="keywords" content="courier, shipment, deliver, track, parcel, kenya, ethan">
+<meta name="description" content="Ethan courier is a courier service company based in kenya.
+        We deliver parcels, cargo and any other shipment right at your doorstep">
 <!-- Google Analytics -->
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,8 +30,7 @@ ga('send', 'pageview');
 <link type="text/css" href="main.css" rel="stylesheet">
 <!--    bootstrap-->
 <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css">
-<!--    Include the CSS & JS slickNav-->
-<link rel="stylesheet" href="SlickNav/dist/slicknav.css" />
+
 <!--    skitter slideshow css-->
 <link type="text/css" href="skitter-Slideshow/dist/skitter.css" media="all" rel="stylesheet" />
 <!--font awesome-->

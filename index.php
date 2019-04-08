@@ -32,19 +32,19 @@
     </script>
 </head>
 <body>
-    <div class="container"  >
+    <div class=""  >
     
     <?php
     include "header.php";
     ?>
-    <div style="background: url('images/background/gravel.png') fixed;" id="main-content">
+    <div style="" id="main-content">
         <div class="row" >
             <div class="col-lg-8 col-md-8 c0l-sm-8 col-xs-12">
                 <!--carousel -->
                 <div class="skitter skitter-large ">
                     <ul>
                         <li>
-                            <a href="#circlesRotate"><img src="images/courier-3.jpg" class="circles" height="300"/></a>
+                            <a href="#blindWidth"><img src="images/parcel 2.jpg" class="blindWidth" height="300"/></a>
                             <div class="label_text">
                                 <h3 style="color: #ffffff;">
                                     Looking for reliable courier service for your company?<br>
@@ -52,7 +52,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#circleInside"><img src="images/courier-7.jpg" class="circlesInside" height="300"/></a>
+                            <a href="#blindWidth"><img src="images/port.jpg" class="blindWidth" height="300"/></a>
                             <div class="label_text">
                                 <h4  style="color: #ffffff;">
                                    Timely delivery
@@ -60,13 +60,13 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#circlesRotate"><img src="images/courier-10.jpg" class="circlesRotate" /></a>
+                            <a href="#blindWidth"><img src="images/courier truck.jpg" class="blindWidth" /></a>
                             <div class="label_text">
                                 <h4  style="color: #ffffff;">We deliver and pick shipment from your location</h4>
                             </div>
                         </li>
                         <li>
-                            <a href="#blindWidth"><img src="images/courier-9.jpg" class="blindWidth" /></a>
+                            <a href="#blindWidth"><img src="images/warehouse.jpg" class="blindWidth" /></a>
                             <div class="label_text">
                                 <h4  style="color: #ffffff;">Ship at economical rates</h4>
                             </div>
@@ -78,7 +78,7 @@
                 <div class="">
                     <h3>Place your courier order</h3>
 <!--                    <img src="images/courier-9.jpg" class="img-responsive" height="50"><br>-->
-                    <form method="post" class="row" action="save-order.php">
+                    <form method="post" class="row" action="#">
                         <div class="form-group col-lg-9">
                             <input type="text" name="name" required class="form-control" placeholder="Full name">
                         </div>
@@ -101,7 +101,7 @@
                             <input type="text" required class="form-control" placeholder="county / Town">
                         </div>
                         <div class=" col-lg-5 col-md-5 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
-                            <input type="submit" value="Order courier" class="btn btn-success">
+                            <input type="submit" value="Order courier" class="btn btn-success" id="courier-order-index">
                         </div>
                     </form>
                 </div>
@@ -125,7 +125,8 @@
                         &nbsp;&nbsp;Get your shipment delivered at an affordable price
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
-                        <span class="number fa fa-calendar-check-o "></span><br>
+                        <span class="number fa fa-clock-o "></span><br>
+                        Contact our customer service team any day any time
                     </div>
                 </div>
             </div>
