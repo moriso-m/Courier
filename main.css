@@ -23,6 +23,9 @@ body{
     margin-top:20px;
     font-size:1.3em;
 }
+.top-header{
+    background: rgba(0,0,0,0.2);
+}
 #slogan{
     /* float: right !important; */
     

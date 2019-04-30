@@ -8,45 +8,19 @@
 
 ?>
 <div class="" >
-	<div>
-		<!-- <img src="images/courier-7.jpg" alt="" srcset="" class="img-responsive img-thumbnail"> -->
-		
-		<div>
-			<span id="company">
-				<img src="images/logo.png" alt="Ethan courier" height="100">
-				<!-- 3than courier -->
-			</span>
-			<span class="pull-right header-links" >
-				<span><a href="reviews">Reviews</a></span>
-				<span class="separator">|</span>
-				<span><a href="downloads">Downloads</a></span>
-				<span>|</span>
-				<span><a href="contact">Contact us</a></span>
-			</span>
-		</div><br>
-        <div id="slogan" class="">
-			<!-- <em>We <span>move</span> with you</em> -->
-			<div class="pull-right" >
-                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-facebook-square fa-lg fa-2x"></i></a>&nbsp;&nbsp;
-                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-twitter-square fa-lg fa-2x"></i></a>&nbsp;&nbsp;
-                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-google-plus fa-lg "></i></a>&nbsp;&nbsp;
-                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-linkedin fa-lg fa-2x"></i></a>
-                </div>
-		</div>
-
-	<script>
-		(function() {
-			var cx = '013763785425053701827:chk_ssugi1k';
-			var gcse = document.createElement('script');
-			gcse.type = 'text/javascript';
-			gcse.async = true;
-			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
-		})();
-		</script>
-		<!-- <gcse:search></gcse:search> -->
-	</div> <br>
+	<div class="top-header">
+		<span id="company">
+			<img src="images/logo.jpg" height="80" width="300" alt="Ethan" style="color:#ffffff;">
+			<!-- 3than courier -->
+		</span>
+		<span class="pull-right header-links" >
+			<span><a href="reviews">Reviews</a></span>
+			<span class="separator">|</span>
+			<span><a href="downloads">Downloads</a></span>
+			<span>|</span>
+			<span><a href="contact">Contact us</a></span>
+		</span>
+	</div>
 	
 	<nav class="navbar navbar-default" id="mainNav">
 		<div class="navbar-header">
