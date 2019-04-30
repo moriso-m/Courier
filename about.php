@@ -62,19 +62,19 @@
 					they require delivery.
 					We are a Kenyan company with offices in Eldoret and Nairobi, Uganda and Tanzania.
 				</p>
-					<h3 class="text-center">Our Mission</h3>
+					<h3 class="text-center" id="mission">Our Mission</h3>
 					<p>
 						We are committed to providing delivery services to our customers 24/7 with reasonable rates 
 						on a consistent basis. We enable our customers to prosper by delivering their products on time 
 						in a professional manner. We will continuously challenge ourselves to exceed our customers’ 
 						expectations by providing leading edge solutions to their needs
 					</p>
-					<h3 class="text-center">Our Vision</h3>
+					<h3 class="text-center" id="vision">Our Vision</h3>
 					<p>
 						To be the “Go To” courier company with assurance in quality,
 						advanced delivery services in and outside Kenya for our customers everywhere.
 					</p>
-					<h3 class="text-center">Core values</h3>
+					<h3 class="text-center" id="core-values">Core values</h3>
 					<ul>
 						<li>We deliver with commitment and with a sense of urgency each and every time.</li>
 						<li>

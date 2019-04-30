@@ -56,6 +56,9 @@ body{
 #mainNav ul li a{
     color: #ffffff;
 }
+#mainNav .about-dropdown a{
+    color:#000000;
+}
 #dropdown{
     position: relative;
 }

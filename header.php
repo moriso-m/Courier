@@ -65,8 +65,14 @@
 				<li>
 					<a href="programs"></a>
 				</li>
-				<li >
-					<a href="about" >About us</a>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">About us
+					<span class="caret"></span></a>
+					<ul class="dropdown-menu about-dropdown" >
+					<li><a href="about#mission">Mission</a></li>
+					<li><a href="about#vision">Vision</a></li>
+					<li><a href="about#core-values">Core values</a></li>
+					</ul>
 				</li>
 				<li>
 					<a href="services">
@@ -91,18 +97,13 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
                 <li>
-					<a href="login">
+					<a href="http://www.ethancourier.com:2095" target="blank">
 						Staff login
 					</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
-	<div id="dropdown-content">
-		<a href="about#core-values">Core-values</a>
-		<a href="about#mission">Mission</a>
-		<a href="about#vision">Vision</a>
-	</div>
 </div>
 
 <div id="tracking-builder"></div>

@@ -12,6 +12,7 @@
 <head>
     <?php include "links.php";?>
     <title>Services</title>
+    <meta name="description" content="Large package & trucking, small package delivery, Warehousing ">
 </head>
 <body>
     <div class=""  >
