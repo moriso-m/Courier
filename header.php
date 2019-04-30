@@ -31,7 +31,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a href="index" class="navbar-brand">
-				<img src="images/logo.jpg" height="50" width="80" alt="Ethan" style="color:#ffffff;">
+				Ethan
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
