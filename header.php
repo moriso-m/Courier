@@ -30,7 +30,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="index" class="navbar-brand">
+			<a href="index" class="navbar-brand" style="color:#ffffff;">
 				Ethan
 			</a>
 		</div>
