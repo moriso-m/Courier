@@ -30,12 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	
 		if(preg_match('/^\d{10}$/', $phone)){
 			if (filter_var($email,FILTER_VALIDATE_EMAIL)){
-				$to_email = "info@ethancourier.com";
+				$to_email = "sales@ethan.com";
 				$subject = "SHIPPING RATES REQUEST";
-				$message = "Country :". $country."\r\nFrom : ". $from."\r\n To :".$to."\r\n DEscription". $description.
-							"\r\nPhone number : ".$phone."\r\nEmail :".$email ;
-				if(mail($to_email,$subject,$message,"From:".$email."\r\n")){
-					$sql = 'INSERT INTO  `ethancou_ethan`.`rates_requests`(`name`,`phone`,`email`,`from_location`,`to_location`,`description`,`date`)'.
+				$message = "Country :". $country."\r\nFrom : ". $from." To :".$to."
+							\r\nPhone number : ".$phone."\r\nEmail :".$email ;
+				// if(mail($to,$subject,$message,"From:\r\n")){
+					$sql = 'INSERT INTO  `ethan`.`rates_requests`(`name`,`phone`,`email`,`from_location`,`to_location`,`description`,`date`)'.
 							'VALUES("'.$name.'","'.$phone.'","'.$email.'","'.$from.'","'.$to.'","'.$description.'","'.time().'")';
 
 					$query = mysqli_query($conn,$sql);
@@ -44,8 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					}
 					else{
 						if (mysqli_affected_rows($conn)>0){
-							echo '<div  class="alert-info">
-							        <a href="#" class="close" data-dismiss="alert">&times</a>
+							echo '<div style="color: #3c763d;" class="alert-info">
 									<em>Your quotition has been received.We will communicate shortly to you</em>
 								</div>';
 						}
@@ -53,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 							echo "try again..We were unable to receive your request";
 						}
 					}
-				}
+				// }
 			}
 			else {
 				echo "invalid email address";
