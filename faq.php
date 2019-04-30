@@ -8,7 +8,9 @@
 </head>
 <body>
     <dl>
-        <dd></dd>
+        <dt><a href="index">Home</a></dt>
+            <dd><a href="index">Home page</a></dd>
+        <dt><a href="services">Services</a></dt>
     </dl>
 </body>
 </html>

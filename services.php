@@ -36,43 +36,84 @@
 
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 each-service jumbotron">
-                    <img src="images/door to door delivery.jpg" alt="" class="img-responsive img-circle">
-                    <p><b>Door to door delivery </b></p>
+                    <img src="images/door to door delivery.jpg" alt="" class="img-responsive ">
+                    <p><b>small package delivery </b></p>
                     <p>
-                        By coming to Ethan courier ltd, 
-                        you would have taken one of the steps of ensuring your cargo arrives safely and ...                    </p>
-                    <div id="arrow-down">
+                        We utilize a fleet of small vehicles to get your package where it needs to go as 
+                        quickly and efficiently as possible.                    </p>
+                    <!-- <div id="arrow-down">
                             <a href="#" class="btn btn-success">
                                 <span class="fa fa-angle-down"></span>    
                                 Read more
                             </a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 each-service jumbotron">
-                    <img src="images/courier truck.jpg" alt="Luggage packaging" class="img-responsive img-circle">
-                    <p><b>Luggage packaging</b></p>
+                    <img src="images/large truck.jpg" alt="Luggage packaging" class="img-responsive ">
+                    <p><b>Large package & trucking</b></p>
                     <p>
-                        From small packages to large containers we have all types of means from trucks to small vehicles
-                        to transport your luggage...                    </p>
-                    <div id="arrow-down">
+                        We have cargo vans and straight trucks with lift gates to handle your larger shipping needs.
+                    </p>
+                    <!-- <div id="arrow-down">
                             <a href="#" class="btn btn-success">
                                 <span class="fa fa-angle-down"></span>    
                                 Read more
                             </a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 each-service jumbotron">
-                    <img src="images/parcel.jpg" alt="Warehousing" class="img-responsive img-circle">
+                    <img src="images/parcel.jpg" alt="Warehousing" class="img-responsive ">
                     <p><b>Warehousing </b></p>
                     <p>
                         Ethan courier provides warehousing facilities at the most economical rates...
                     </p>
-                    <div id="arrow-down">
+                    <!-- <div id="arrow-down">
                             <a href="#" class="btn btn-success">
                                 <span class="fa fa-angle-down"></span>    
                                 Read more
                             </a>
-                    </div>
+                    </div> -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 each-service jumbotron">
+                    <img src="images/airport courier.jpg" alt="Airport courier service" class="img-responsive ">
+                    <p><b>Airport courier service</b></p>
+                    <p>
+                        we do airport deliveries that is in Eldoret international Airport and at Jomo Kenyatta International airport
+                    </p>
+                    <!-- <div id="arrow-down">
+                            <a href="#" class="btn btn-success">
+                                <span class="fa fa-angle-down"></span>    
+                                Read more
+                            </a>
+                    </div> -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 each-service jumbotron">
+                    <img src="images/scheduled delivery.jpg" alt="Scheduled Deliveries" class="img-responsive">
+                    <p><b>Scheduled Deliveries</b></p>
+                    <p>
+                        Let us handle your daily, weekly or monthly scheduled deliveries. 
+                        Set them up and forget about them as we handle the worries for you
+                    </p>
+                    <!-- <div id="arrow-down">
+                            <a href="#" class="btn btn-success">
+                                <span class="fa fa-angle-down"></span>    
+                                Read more
+                            </a>
+                    </div> -->
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 each-service jumbotron">
+                    <img src="images/courier-7.jpg" alt="Regular Service" class="img-responsive ">
+                    <p><b>Regular Service</b></p>
+                    <p>
+                         Economical services and reasonable rate.  Shipments are picked up and delivered
+                          during business hours.
+                    </p>
+                    <!-- <div id="arrow-down">
+                            <a href="#" class="btn btn-success">
+                                <span class="fa fa-angle-down"></span>    
+                                Read more
+                            </a>
+                    </div> -->
                 </div>
             </div>
 

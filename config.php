@@ -11,16 +11,20 @@ $server='localhost';
 $user='root';
 $password='';
 $db='ethan';
+
+
 /**  state of the website
  * @var state =debug => 'under development
  * @var state = production =>'hosted and online'
  **/
+
 $state='debug';
 
 $conn=mysqli_connect($server,$user,$password);
 if (mysqli_connect_error()){
 	if (isset($_SESSION['state']) and $_SESSION['state'] == 'debug'){
 		echo 'Connection failed'.mysqli_connect_error();
+		exit();
 	}
 	echo 'something went wrong, please try reloading the page';
 	$logFile= fopen('log.txt','a+') or die('internal error occurred, please reloading later');

@@ -14,8 +14,8 @@
             <a href="contact" >Contact</a>
             <p class="text-block footer-content footer-content-contact">
                 <address>
-                <span class="fa fa-phone"></span> TEL:+9910154875<br>
-                <span class="fa fa-envelope-o"></span> info@kcador.com<br>
+                <span class="fa fa-phone"></span> TEL:+254706619474, +254728147154<br>
+                <span class="fa fa-envelope-o"></span> info@ethancourier.com<br>
                 </address>
 
             </p>
@@ -77,6 +77,3 @@
         </form>
     </div>
 </div>
-
-
-<script src="main.js"></script>

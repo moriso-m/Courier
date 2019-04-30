@@ -4,23 +4,79 @@ body{
     margin: 0px;
 
 }
+#company{
+    text-decoration: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+    display: inline-block;
+    /* position: absolute; */
+    top: 17px;
+    padding-left: 2px;
+    font-family: 'Comfortaa', cursive;
+
+}
+.header-links{
+    margin-top:20px;
+    font-size:1.3em;
+}
+#slogan{
+    /* float: right !important; */
+    
+
+    font-family: 'PT Sans Narrow', sans-serif;
+
+    font-family: 'Comfortaa', cursive;
+
+
+}
+
+#slogan{
+    display: block;
+     
+}
+#slogan span{
+    color:rgb(153, 51, 153);
+}
 #main-content{
-    border: 1px solid #c4c4c4;
+    /* border: 1px solid #c4c4c4; */
     margin-top: -20px;
     font-family: Verdana, Helvetica, Geneva, Arial, sans-serif;
     min-height: 46.5vmin;
 }
 #mainNav{
     background:rgb(153, 51, 153)/* rgb(3, 51, 99)*/;
-    font-size: 1.12em;
-    
+    font-size: 1.16em;
+    font-family: 'Lato', sans-serif;
     /* margin: -16px; */
 }
 #mainNav ul li a{
-    font-weight: bold;
     color: #ffffff;
 }
+#dropdown{
+    position: relative;
+}
+#dropdown-content {
+    /* display: none; */
+    position: absolute;
+    left: 15px;
+    top:2;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
 
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+.nav li a:hover{
+    background: rgba(153, 51, 153,0.3)
+}
 .description{
     font-family: Verdana, Helvetica, Geneva, Arial, sans-serif;
     font-size: 1.3em;
@@ -134,7 +190,15 @@ body{
 /* about.php */
 .about{
     font-size: 1.3em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'Oxygen', sans-serif;
+}
+.about h3{
+    color:rgb(153, 51, 153);
+}
+#about-contact{
+    font-family: 'Comfortaa', cursive;
+    font-size:1.2em;
 }
 /* services.php */
 #services img{
@@ -145,13 +209,18 @@ body{
     border-radius: 100%;
     margin:5px auto;
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
+    /* opacity: 0.7; */
 }
 #services img:hover{
     /* -webkit-transform: rotate(90deg);
     transform: rotate(90deg); */
-    width: 150px;
+    width: 350px;
     height:150px;
+    -webkit-border-radius:0%;
+    -moz-border-radius:0%;
+    border-radius: 0%;
+    opacity: 1;
 }
 #services p{
     text-align: center;
@@ -247,13 +316,54 @@ table{
 #popup-box button, #track-shipment button {
     padding: 10px;
 }
+/* reviews.php */
+.reviews .review-per-person{
+    border-bottom: 1px solid #ddd;
+}
+.reviews .name, .name{
+    margin: 15px auto;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.reviews .fa-heart{
+    color: rgba(255,0,0,0.7);
+    font-size: 1.4em;
+    margin-left:30px;
+    cursor: pointer;
+}
+.reviews .fa-heart:active{
+    -webkit-transform:scale(2,2);
+    transform:scale(1.5,1.5);
+}
+.reviews .review-message{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em; 
+    color: rgba(0,0,0,0.5);
+}
+.reviews .review-likes{
+    margin-bottom: 15px;
+}
+
+/* contact.php */
+#contact-page{
+
+    /* font-family: 'PT Sans Narrow', sans-serif; */
+    font-family: 'Comfortaa', cursive;
+    font-size:1.2em;
+}
+#contact-page h3{
+    margin: 20px 5px;
+    font-size:1.6em;
+}
 /*footer.php*/
 .footer{
     color: #ffffff;
     text-align: center;
     background-color:rgb(22, 2, 22);
     margin-left: 0px;
-    font-size: 0.88em;
+    font-size: 0.92em;
+    font-family: 'Comfortaa', cursive;
     /*max-height: 250px;*/
 }
 .footer a,.footer p{

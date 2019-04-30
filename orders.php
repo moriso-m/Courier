@@ -1,6 +1,7 @@
 <?php
 require_once "config.php";
 $table ='orders';
+$records = 8;
 /* create a paginator for all orders*/
 include "pagination.php";
 ?>

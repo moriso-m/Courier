@@ -10,8 +10,44 @@
 <div class="" >
 	<div>
 		<!-- <img src="images/courier-7.jpg" alt="" srcset="" class="img-responsive img-thumbnail"> -->
-        <p><em>We <span style="color:rgb(153, 51, 153); ">move</span> with you</em></p>
-	</div> 
+		
+		<div>
+			<span id="company">
+				<img src="images/logo.png" alt="Ethan courier" height="100">
+				<!-- 3than courier -->
+			</span>
+			<span class="pull-right header-links" >
+				<span><a href="reviews">Reviews</a></span>
+				<span class="separator">|</span>
+				<span><a href="downloads">Downloads</a></span>
+				<span>|</span>
+				<span><a href="contact">Contact us</a></span>
+			</span>
+		</div><br>
+        <div id="slogan" class="">
+			<!-- <em>We <span>move</span> with you</em> -->
+			<div class="pull-right" >
+                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-facebook-square fa-lg fa-2x"></i></a>&nbsp;&nbsp;
+                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-twitter-square fa-lg fa-2x"></i></a>&nbsp;&nbsp;
+                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-google-plus fa-lg "></i></a>&nbsp;&nbsp;
+                    <a href="#" style="color:rgb(0,0,0,0.6);"><i class="fa fa-linkedin fa-lg fa-2x"></i></a>
+                </div>
+		</div>
+
+	<script>
+		(function() {
+			var cx = '013763785425053701827:chk_ssugi1k';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		})();
+		</script>
+		<!-- <gcse:search></gcse:search> -->
+	</div> <br>
+	
 	<nav class="navbar navbar-default" id="mainNav">
 		<div class="navbar-header">
 			<!collapsable navbar-->
@@ -29,8 +65,8 @@
 				<li>
 					<a href="programs"></a>
 				</li>
-				<li class="dropdown">
-					<a href="about">About us</a>
+				<li >
+					<a href="about" >About us</a>
 				</li>
 				<li>
 					<a href="services">
@@ -42,18 +78,18 @@
 						Contact us
 					</a>
 				</li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li>
+				<!-- <li>
 					<a href="track">
 						Track shipment
 					</a>
-				</li>
+				</li> -->
 				<li>
-					<a href="#" data-target="#order" data-toggle="modal">
+					<a href="rates">
 						Request for quotition
 					</a>
 				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
                 <li>
 					<a href="login">
 						Staff login
@@ -62,6 +98,11 @@
 			</ul>
 		</div>
 	</nav>
+	<div id="dropdown-content">
+		<a href="about#core-values">Core-values</a>
+		<a href="about#mission">Mission</a>
+		<a href="about#vision">Vision</a>
+	</div>
 </div>
 
 <div id="tracking-builder"></div>
@@ -89,10 +130,11 @@
             <div class="modal-header text-center">
                 <a href="#" data-dismiss="modal" class="close">&times;</a>
                 <h3>
-                    Quotititon request details
+                    Request for shipping rate
                 </h3>
             </div>
             <div class="modal-body" >
+				<!-- 
 				<div id="alert" style="color:red"></div>
                 <form method="post" class="row" id="order-form" action="save-order.php">
                     <div class="form-group col-lg-8 col-lg-offset-2">
@@ -131,6 +173,7 @@
                         Order courier
                     </button>
                 </form>
+				-->
             </div>
         </div>
 

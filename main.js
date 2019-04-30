@@ -4,28 +4,15 @@
 $(window).scroll(function() {
    var pos = $(window).scrollTop();
    console.log(pos);
-   if (pos>38) {
+   if (pos>80) {
        $('nav').addClass('navbar-fixed-top fade in');
        $('nav').css({
            
        })
    }
-   else if(pos < 50){
+   else if(pos < 80){
        $('nav').removeClass('navbar-fixed-top');
    }
-});
-
-/* #################### save courier order ################*/
-$('#courier-order,#courier-order-index').click(function (e) {
-    e.preventDefault();
-    $.ajax({
-        type: 'POST',
-        url : 'save-order.php',
-        data : $('#order-form').serialize(),
-        success : function (data,status) {
-            $('#alert').html(data);
-        }
-    });
 });
 
 /*pop up for newsletter subscription*/
@@ -65,9 +52,65 @@ $(document).ready(function() {
 });
 */
 
+
+/* #################### save courier order ################*/
+$('#courier-order,#courier-order-index').click(function (e) {
+    e.preventDefault();
+    ajaxHandler('save-order.php','#alert',$('#order-form').serialize());
+});
+
+
 $(document).ready(function() {
     $("#track-close").click(() => {
         $("#tracking-builder, #track-shipment").hide();
         localStorage.setItem("list-builder", (new Date()).getTime());
     });
 });
+
+/* #################### add review ################*/
+
+$('#send-review').click(function (e) {
+    e.preventDefault();
+    if($('#rating').val() < 6 && $('#rating').val() > 0 || $('#rating').val() ==''){
+        ajaxHandler('send-review.php','.reviews',$('#review-form').serialize());
+        $('#name').val('');
+        $('#comment').val('');
+        $('#rating-div').removeClass('has-error');
+    }
+    else{
+        $('#rating-div').addClass('has-error');
+        $('#hidden').show();
+        $('#hidden').css('color','red');
+    }
+  });
+
+
+
+  /* #################### like comment ################*/
+  var like;
+function like(like){
+    $.post(
+        "send-review.php",
+        {
+            like: like
+        },
+        function (data, status) {
+            if (status === 'success'){
+                $('#like'+like).text(data);
+            }
+        });
+}
+
+
+  /* #################### ajax request handler for all forms ################*/
+  var url,responseTarget,src;
+  function ajaxHandler(url,responseTarget,src){
+    $.ajax({
+        url: url,
+        type: 'POST',
+        data: src,
+        success: function (data,status) {
+            $(responseTarget).html(data);
+          }
+    });
+  }

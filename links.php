@@ -36,7 +36,10 @@ ga('send', 'pageview');
 <!--font awesome-->
 <link rel="stylesheet" href="../Font-Awesome-master/css/font-awesome.min.css">
 
-<!--    jQuery-->
-<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
-<!--    bootstrap-->
+<!-- jQuery -->
+<script src="../jquery-3.2.1.min.js"></script>
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Lato|Oxygen" rel="stylesheet">  
+
+ <!--    bootstrap-->
 <script type="text/javascript" src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>

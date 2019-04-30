@@ -8,31 +8,35 @@
 
 require_once "config.php";
 
-//check whether method is post
+// check whether method is post
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$country='';
-	$location='';
+	$description='';
 	$name = '';
-	if (isset($_REQUEST['phone'],$_REQUEST['email'])){
+	if (isset($_REQUEST['phone'],$_REQUEST['from'],$_REQUEST['to'],$_REQUEST['email'])){
+		if (!empty($_REQUEST['phone']) and !empty($_REQUEST['from']) and !empty($_REQUEST['to']) and !empty($_REQUEST['email'])) {
 		$phone = $_REQUEST['phone'];
+		$from = $_REQUEST['from'];
+		$to = $_REQUEST['to'];
 		$email = $_REQUEST['email'];
-		if (!empty($_REQUEST['country'])){
-			$country = $_REQUEST['country'];
-		}
-		if (!empty($_REQUEST['location'])){
-			$location = $_REQUEST['location'];
-		}
+
 		if (!empty($_REQUEST['name'])){
 			$name = $_REQUEST['name'];
+			
 		}
+		if (!empty($_REQUEST['description'])){
+			$description = $_REQUEST['description'];
+		}
+	
 		if(preg_match('/^\d{10}$/', $phone)){
 			if (filter_var($email,FILTER_VALIDATE_EMAIL)){
-				$to = "sales@ethan.com";
-				$subject = "COURIER ORDER";
-				$message = "Country :". $country."\r\nLocation : ". $location."\r\nPhone number : ".$phone."\r\nEmail :".$email ;
+				$to_email = "sales@ethan.com";
+				$subject = "SHIPPING RATES REQUEST";
+				$message = "Country :". $country."\r\nFrom : ". $from." To :".$to."
+							\r\nPhone number : ".$phone."\r\nEmail :".$email ;
 				// if(mail($to,$subject,$message,"From:\r\n")){
-					$sql = 'INSERT INTO  `ethan`.`orders`(`name`,`phone`,`email`,`country`,`location`,`date`)'.
-							'VALUES("'.$name.'","'.$email.'","'.$phone.'","'.$country.'","'.$location.'","'.time().'")';
+					$sql = 'INSERT INTO  `ethan`.`rates_requests`(`name`,`phone`,`email`,`from_location`,`to_location`,`description`,`date`)'.
+							'VALUES("'.$name.'","'.$phone.'","'.$email.'","'.$from.'","'.$to.'","'.$description.'","'.time().'")';
 
 					$query = mysqli_query($conn,$sql);
 					if (mysqli_error($conn)){
@@ -40,9 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 					}
 					else{
 						if (mysqli_affected_rows($conn)>0){
-							echo '<div class="alert alert-success">
-									<a href="#" class="close" data-target="alert">&times</a>
-									<em>Your order has been successfully received.>We will communicate shortly to you</em>
+							echo '<div style="color: #3c763d;" class="alert-info">
+									<em>Your quotition has been received.We will communicate shortly to you</em>
 								</div>';
 						}
 						else{
@@ -62,4 +65,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	else{
 		echo '<div class="alert alert-danger">Please fill out the fields first</div>';
 	}
+}
 }
