@@ -54,6 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 						}
 					}
 				}
+				else{
+					echo "failed to send data email";
+				}
 			}
 			else {
 				echo "invalid email address";
@@ -66,5 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	else{
 		echo '<div class="alert alert-danger">Please fill out the fields first</div>';
 	}
+}
+else {
+	echo "please feel out the fields";
 }
 }

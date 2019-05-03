@@ -53,10 +53,10 @@ $(document).ready(function() {
 */
 
 
-/* #################### save courier order ################*/
-$('#courier-order,#courier-order-index').click(function (e) {
+/* #################### save courier order(index.php) ################*/
+$('#courier-order').click(function (e) {
     e.preventDefault();
-    ajaxHandler('save-order.php','#alert',$('#order-form').serialize());
+    ajaxHandler('save-order.php','#alert-mainPage',$('#order-form').serialize());
 });
 
 

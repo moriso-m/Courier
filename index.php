@@ -78,26 +78,25 @@
                 <div class="">
                     <h3>Request for Quotition</h3>
 <!--                    <img src="images/courier-9.jpg" class="img-responsive" height="50"><br>-->
-                <div id="alert" style="color:red"></div>
+                <div id="alert-mainPage" style="color:red"></div>
                 <form method="post" class="row" id="order-form" action="save-order.php">
-                    <div class="form-group col-lg-8 col-lg-offset-2">
+                    <div class="form-group col-lg-6 ">
                         <input type="text" name="name" required class="form-control" placeholder="name">
 						
                     </div>
-                    <div class="form-group col-lg-8 col-lg-offset-2">
+                    <div class="form-group col-lg-6">
                         <input type="number" name="phone" required class="form-control" placeholder="phone" >
 						<span class="help-block">eg. 0712345678</span>
                     </div>
-                    <div class="form-group col-lg-8 col-lg-offset-2">
+                    <div class="form-group col-lg-6">
                         <input type="text" name="from" required class="form-control" placeholder="From which location">
                     </div>
-                    <div class="form-group col-lg-8 col-lg-offset-2">
+                    <div class="form-group col-lg-6">
                         <input type="text" name="to" required class="form-control" placeholder="to">
                     </div>
-
-                    <!-- <div class="form-group col-lg-8 col-lg-offset-2">
+                    <div class="form-group col-lg-6">
                         <input type="email" name="email" required class="form-control" placeholder="email address">
-                    </div> -->
+                    </div>
   
                    <!--
                     <div class="form-group col-lg-8 col-lg-offset-2">

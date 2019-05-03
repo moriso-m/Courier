@@ -8,7 +8,7 @@
     <div>
         <?php include "header.php";?>
         <div class="jumbotron text-center">
-            <h3>Request for shipping rates</h3>
+            <h3>Request for quotation</h3>
         </div>
         <div id="alert" style="color:red" class="text-center"></div>
                 <form method="post" class="row" id="order-form" action="save-order.php">
