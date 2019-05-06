@@ -11,7 +11,7 @@
 	<div class="top-header">
 		<span id="company">
 			<img src="images/logo.jpg" height="80" width="300" alt="Ethan" style="color:#ffffff;">
-			<!-- 3than courier -->
+			<!-- Ethan courier -->
 		</span>
 		<span class="pull-right header-links" >
 			<span><a href="reviews">Reviews</a></span>
@@ -24,7 +24,7 @@
 	
 	<nav class="navbar navbar-default" id="mainNav">
 		<div class="navbar-header">
-			<!collapsable navbar-->
+			<!--collapsable navbar-->
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -65,7 +65,7 @@
 				</li> -->
 				<li>
 					<a href="rates">
-						Request for quotition
+						Request for quotation
 					</a>
 				</li>
 			</ul>
